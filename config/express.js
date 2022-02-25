@@ -7,6 +7,6 @@ const app = express();
 app.set('port', process.env.PORT || config.get('server.port'));
 
 app.use(bodyParser.json());
-require('../api/routes/depositRouter')(app)
+require('../api/routes/exampleRouter')(app)
 
 module.exports = app 
